@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>PORFOLIO</title>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="nav-div">
+            <span id="fname">
+                <h1>Saksham</h1>
+            </span>
+            <span id="lname">
+                <h1>Sharma.</h1>
+            </span>
+        </div>
+        <div class="navbar">
+            <ul class="nav-ul">
+                <button class="nav-button"><a class="scroll-link" href="#section-1"><span
+                            class=nav-li><b>INTRO</b></span></a></button>
+                <button class="nav-button"><a class="scroll-link" href="#section-2"><span class=nav-li><b>ABOUT
+                                ME</b></span></a></button>
+                <button class="nav-button"><a class="scroll-link" href="#section-3"><span
+                            class=nav-li><b>PROJECTS</b></span></a></button>
+                <button class="nav-button"><a class="scroll-link" href="#section-4"><span class=nav-li><b>SAY
+                                HI</b></span></a></button>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <label class="burger" for="burger">
+                            <input type="checkbox" id="burger" onclick="toggleDropdown()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </a>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <span><a class="dropdown-item1 link" href="#section-2" onclick="toggleDropdown1(event)">About
+                                Me</a></span>
+                        <span><a class="dropdown-item1 link" href="#section-3"
+                                onclick="toggleDropdown1(event)">Projects</a></span>
+                        <span><a class="dropdown-item link" href="#section-4" onclick="toggleDropdown1(event)">Say
+                                Hi</a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="section-1">
+        <div id="intro">
+            <img id="img2" src="intro=photo1.png" alt="intro-photo">
+        </div>
+        <div id="tag-div">
+            <pre class="tag-line" id="tag1"><b>Hi, I'm Saksham Sharma</b></pre>
+            <pre class="tag-line" id="tag2">  Web Developer
+ Based In Kathua.</pre>
+            <div class="code-container">
+                <pre id="code-display"></pre>
+                <div class="cursor"></div>
+            </div>
+        </div>
+        <pre id="more-info"><a id = "pre-link" href = "#section-2"><b>SCROLL FOR MORE</b></a></pre>
+    </section>
+    <section id="section-2">
+        <h1 id="am-h1">ABOUT ME</h1>
+        <div id="am-div"></div>
+        <div id="cards">
+            <div class="card" id="card1">
+                <div class="card-content">
+                    <h2 id="am-head">🛠️Skills</h2>
+                    <ul class="am-skills-list">
+                        <li>Programming Languages: <b>HTML, CSS, JavaScript, C++</b></li>
+                        <li>Soft Skills: <b>High Attention to detials, Problem-Solving, Leadership, Teamwork,
+                                Communication</b></li>
+                    </ul>
+                    <button id="resume"><a target="_blank"
+                            href="https://drive.google.com/file/d/1q74ss0Bx6iawREg_0adtcR0iVraETGVY/view?usp=drive_link"><span
+                                id="resume-span"><b>Download Resume</b></span></a></button>
+                </div>
+                <div class="bg"></div>
+                <div class="blob1"></div>
+            </div>
+            <div class="card" id="card2">
+                <div class="card-content">
+                    <h2 id="am-head">🎓Education</h2>
+                    <ul class="am-skills-list1">
+                        <li><b>Bachelor of Technology in Information Technology</b></li>
+                        <p><strong>Birla Vishvakarma Mahavidyalaya<a class=" edu-link"
+                                    href="https://bvmengineering.ac.in/" target="_blank">🔗</a></strong>, Anand, Gujarat
+                        </p>
+                        <p>Graduation: July 2023 - May 2027</p>
+                        <li><b>High School</b></li>
+                        <p><strong>St. Xavier's Convent School<a class=" edu-link" href="https://www.xavierskathua.com/"
+                                    target="_blank">🔗</a></strong>, Kathua, J&K</p>
+                        <p>Graduation: June 2022</p>
+                    </ul>
+                </div>
+                <div class="bg1"></div>
+                <div class="blob2"></div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-content">
+                    <h2 id="am-head">🏆Achivements</h2>
+                    <ul class="am-skills-list">
+                        <li><b>Successfully cleared the National Defence Academy (NDA) Exam – one of the most
+                                competitive national-level exams in India, demonstrating exceptional aptitude and
+                                commitment.</b></li>
+                        <li><b>Selected among 5000 Student from Jammu And Kashmir for Central Government sponsored full
+                                schlorship</b></li>
+                    </ul>
+                </div>
+                <div class="bg1"></div>
+                <div class="blob2"></div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-content card-4-content">
+                    <div id="am-head">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <image xlink:href="NCC.png" id="ncc-logo" alt="NCC Logo"></image>
+                        </svg>
+                        <h3 id="ncc">NCC</h3>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="content-img" id="carousel">
+                            <img src="snic1.jpg" class="camp-img" id="snic-img" alt="SNIC Event Image">
+                            <div id="snic-content" class="content">
+                                <h3>Special National Integration Camp</h3>
+                                <ul id="snic-ul" class="content-ul">
+                                    <li><b>Prepared the PowerPoint presentation, authored content, and managed the mic
+                                            for the Gujarat Directorate during the National Integration Awareness
+                                            Program.</b></li>
+                                    <li><b>Enthusiastically participated in traditional games, promoting teamwork and
+                                            friendly competition.</b></li>
+                                    <li><b>Took part in the Selfie Point Making Competition, showcasing creativity and
+                                            artistic skills.</b></li>
+                                    <li><b>Engaged in cultural exchange activities, sharing Gujarat's heritage and
+                                            learning about diverse traditions, fostering unity and camaraderie.</b></li>
+                                </ul>
+                            </div>
+                            <img src="catc.jpg" class="camp-img" id="catc-img" alt="CATC Event Image">
+                            <div id="catc-content" class="content">
+                                <h3>Combined Annual Training Camp (CATC)</h3>
+                                <ul id="catc-ul" class="content-ul">
+                                    <li><strong>Played a pivotal role as the mic controller for a cultural event,
+                                        ensuring smooth execution and garnering recognition from the commanding
+                                        officer, who honored me with a medal for outstanding contributions.</strong>
+                                </li>
+                                    <li><strong>Exhibited exceptional leadership as the camp leader, successfully
+                                            managing and motivating a contingent of 30 cadets.</strong></li>
+                                    <li><strong>Achieved notable victories, including leading the women's team to
+                                            triumph in the tug-of-war competition.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button id="prevBtn">⬅️</button>
+                    <button id="nextBtn">➡️</button>
+                </div>
+                <div class="bg"></div>
+                <div class="blob1"></div>
+            </div>
+        </div>
+    </section>
+    <section id="section-3">
+        <h1 class="section-3-head">PROJECTS</h1>
+        <div id="welcome"></div>
+        <h2 class="section-3-head" id="h2-head">Innovating, Building, and Growing With Every Project.</h2>
+        <div id="projects">
+            <diV class="project" id="Portfolio">
+                <a href="#"><img class="project-img" src="Screenshot (147).png" alt="Portfolio"></a>
+            </diV>
+            <diV class="project" id="StateMate">
+                <a><img class="project-img" src="State.png" alt="StateMate"></a>
+            </diV>
+            <span id="span1">"Dream. Create. Innovate. This portfolio is more than just a collection of my work—it’s a
+                testament to my journey of learning, creating, and aspiring for excellence. Take a look, and let’s make
+                something incredible together."</span>
+            <span id="span2">"Developing an online platform utilizing web technologies to connect statewide
+                individuals."</span>
+        </div>
+    </section>
+    <section id="section-4">
+        <div id="say-hi">
+            <h1>GET IN TOUCH</h1>
+            <div id="underline"></div>
+            <div id="socials">
+                <span id="socials-tag">Let’s stay connected! Whether it’s for a project, feedback, or just a chat, I’m
+                    always open to hearing from you. <a href="mailto:balotra2004@gmail.com">📧</a></span>
+                    <img src="text-1734210311874.png" alt="Saksham" id="name">
+            </div>
+        </div>
+    </section>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>© 2024 Saksham Sharma. All Rights Reserved.</p>
+            </div>
+            <div id = "social-2">
+                <a href="https://github.com/sakshambalotra-2004" target="_blank">
+                    <svg height="32" viewBox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg" fill="white">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.65 7.65 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/saksham-sharma-63553626a/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                        fill="white">
+                        <path
+                            d="M20.447 20.452H16.89v-5.569c0-1.327-.026-3.042-1.852-3.042-1.852 0-2.136 1.445-2.136 2.941v5.67h-3.557V9h3.414v1.561h.049c.477-.9 1.637-1.852 3.369-1.852 3.599 0 4.261 2.37 4.261 5.451v6.291zM5.337 7.433c-1.144 0-2.067-.926-2.067-2.066C3.27 4.225 4.193 3.3 5.337 3.3c1.139 0 2.066.926 2.066 2.067 0 1.139-.927 2.066-2.066 2.066zm1.786 13.019H3.554V9h3.569v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451c.98 0 1.771-.774 1.771-1.729V1.729C24 .774 23.206 0 22.225 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    <script src="chat.js"></script>
+</body>
+
+</html>
