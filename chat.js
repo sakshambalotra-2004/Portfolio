@@ -52,3 +52,15 @@ updateCarousel();
 // Example buttons for navigation
 document.getElementById("prevBtn").addEventListener("click", () => toggleCarousel(-1));
 document.getElementById("nextBtn").addEventListener("click", () => toggleCarousel(1));
+const express = require('express');
+const fs = require('fs');
+const app = express();
+let count = 0;
+
+app.get('/', (req, res) => {
+    count += 1;
+    fs.writeFileSync('count.txt', count.toString());
+    res.send(`This page has been visited ${count} times.`);
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
